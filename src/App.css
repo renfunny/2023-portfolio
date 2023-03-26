@@ -42,3 +42,11 @@ footer h2 {
 .footer-icon:hover {
   color: #14213d;
 }
+
+/* Home */
+.intro-container {
+  display: flex;
+}
+.greeting-img {
+  max-height: 40rem;
+}

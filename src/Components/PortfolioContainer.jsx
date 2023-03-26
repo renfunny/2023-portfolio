@@ -31,7 +31,7 @@ export default function PortfolioContainer() {
   return (
     <div className="wrapper">
       <NavTabs />
-      {/* {renderPage()} */}
+      <Home />
       <Footer />
     </div>
   );
