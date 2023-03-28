@@ -9,10 +9,15 @@
   text-align: center;
 }
 
-.nav-bgr {
+nav {
   margin-top: 1rem;
-  border-bottom: 2px solid #14213d;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background: rgba(56, 218, 210, 0.377);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -124,16 +129,13 @@ footer h2 {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
+  justify-content: space-around;
   height: 300px;
   padding: 35px;
-
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.45);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
-
   backdrop-filter: blur(15px);
 }
 .tech-icons {
@@ -144,6 +146,44 @@ footer h2 {
   align-content: space-around;
   flex-wrap: wrap;
   font-size: 2.4rem;
+}
+.html:hover,
+.git:hover {
+  cursor: pointer;
+  color: orangered;
+}
+.css:hover,
+.jquery:hover {
+  cursor: pointer;
+  color: blue;
+}
+.javascript:hover,
+.mysql:hover {
+  cursor: pointer;
+  color: #fca311;
+}
+.react:hover {
+  cursor: pointer;
+  color: rgb(55, 212, 212);
+}
+.bootstrap:hover,
+.heroku:hover {
+  cursor: pointer;
+  color: purple;
+}
+.nodejs:hover,
+.mongodb:hover {
+  cursor: pointer;
+  color: green;
+}
+.npm:hover {
+  cursor: pointer;
+  color: red;
+}
+.graphql:hover,
+.jest:hover {
+  cursor: pointer;
+  color: rgb(192, 28, 156);
 }
 /* Background */
 .area {

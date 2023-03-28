@@ -31,9 +31,9 @@ export default function PortfolioContainer() {
 
   return (
     <div className="wrapper">
+      <Background />
       <NavTabs />
       <Home />
-      <Background />
       <Footer />
     </div>
   );
