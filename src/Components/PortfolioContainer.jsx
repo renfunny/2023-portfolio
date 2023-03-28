@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
 import Home from "./Pages/Home";
+import Background from "./Background";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Resume from "./Pages/Resume";
@@ -32,6 +33,7 @@ export default function PortfolioContainer() {
     <div className="wrapper">
       <NavTabs />
       <Home />
+      <Background />
       <Footer />
     </div>
   );

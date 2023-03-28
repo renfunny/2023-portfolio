@@ -6,7 +6,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 function NavTabs() {
   return (
     <Container className="nav-bg">
-      <Navbar expand="lg" className="nav-bgr" variant="dark">
+      <Navbar expand="lg" className="nav-bgr" variant="light">
         <Container>
           <Nav className="me-auto">
             <Navbar.Brand href="#home">RC</Navbar.Brand>
