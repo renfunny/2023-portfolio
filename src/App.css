@@ -28,25 +28,35 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
   width: 100%;
+  height: fit-content;
+  margin: 5rem 0 0 0;
 }
 footer h2 {
   font-size: 1.4rem;
+  color: black;
+  margin-bottom: 2rem;
 }
 .icons-list {
   display: flex;
   list-style-type: none;
   gap: 2rem;
   padding-left: 0;
+  margin-bottom: 2rem;
 }
 .footer-icon {
-  color: #fca311;
   font-size: 1.5rem;
 }
-.footer-icon:hover {
-  color: #14213d;
+.linkedin {
+  color: rgb(50, 190, 183);
+}
+.github {
+  color: rgb(50, 190, 183);
+}
+.github:hover {
+  color: black;
 }
 
 /* Home */
@@ -110,6 +120,7 @@ footer h2 {
     transform: translateX(0);
   }
 }
+/* Technologies */
 .tech-container {
   display: flex;
   flex-direction: column;
@@ -147,41 +158,41 @@ footer h2 {
   flex-wrap: wrap;
   font-size: 2.4rem;
 }
-.html:hover,
-.git:hover {
+.html,
+.git {
   cursor: pointer;
   color: orangered;
 }
-.css:hover,
-.jquery:hover {
+.css,
+.jquery {
   cursor: pointer;
   color: blue;
 }
-.javascript:hover,
-.mysql:hover {
+.javascript,
+.mysql {
   cursor: pointer;
-  color: #fca311;
+  color: #fcbd11;
 }
-.react:hover {
+.react {
   cursor: pointer;
   color: rgb(55, 212, 212);
 }
-.bootstrap:hover,
-.heroku:hover {
+.bootstrap,
+.heroku {
   cursor: pointer;
   color: purple;
 }
-.nodejs:hover,
-.mongodb:hover {
+.nodejs,
+.mongodb {
   cursor: pointer;
   color: green;
 }
-.npm:hover {
+.npm {
   cursor: pointer;
-  color: red;
+  color: rgb(184, 7, 7);
 }
-.graphql:hover,
-.jest:hover {
+.graphql,
+.jest {
   cursor: pointer;
   color: rgb(192, 28, 156);
 }

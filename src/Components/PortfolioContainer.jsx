@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact";
 import Resume from "./Pages/Resume";
 import Footer from "./Footer";
 import Projects from "./Pages/Projects";
+import Technologies from "./Technologies";
 
 export default function PortfolioContainer() {
   // const [currentPage, setCurrentPage] = useState("Home");
@@ -34,6 +35,7 @@ export default function PortfolioContainer() {
       <Background />
       <NavTabs />
       <Home />
+      <Technologies />
       <Footer />
     </div>
   );

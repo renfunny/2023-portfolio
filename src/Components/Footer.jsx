@@ -11,7 +11,8 @@ function Footer() {
           <a
             href="https://linkedin.com/in/renato-cordova-5bbb84211"
             target="_blank"
-            className="footer-icon"
+            className="footer-icon linkedin link"
+            title="LinkedIn"
           >
             <FontAwesomeIcon icon={brands("linkedin")} />
             <span className="sr-only">LinkedIn</span>
@@ -21,7 +22,8 @@ function Footer() {
           <a
             href="https://github.com/renfunny"
             target="_blank"
-            className="footer-icon"
+            className="footer-icon github link"
+            title="GitHub"
           >
             <FontAwesomeIcon icon={brands("github")} />
             <span className="sr-only">GitHub</span>
