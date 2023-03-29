@@ -10,32 +10,35 @@ import Projects from "./Pages/Projects";
 import Technologies from "./Technologies";
 
 export default function PortfolioContainer() {
-  // const [currentPage, setCurrentPage] = useState("Home");
+  const [currentPage, setCurrentPage] = useState("Home");
 
-  // const renderPage = () => {
-  //   if (currentPage === "Home") {
-  //     return <Home />;
-  //   }
-  //   if (currentPage === "Projects") {
-  //     return <Projects />;
-  //   }
-  //   if (currentPage === "About") {
-  //     return <About />;
-  //   }
-  //   if (currentPage === "Contact") {
-  //     return <Contact />;
-  //   }
-  //   return <Resume />;
-  // };
+  const renderPage = () => {
+    if (currentPage === "Home") {
+      return (
+        <>
+          <Home /> <Technologies />
+        </>
+      );
+    }
+    if (currentPage === "Projects") {
+      return <Projects />;
+    }
+    if (currentPage === "About") {
+      return <About />;
+    }
+    if (currentPage === "Contact") {
+      return <Contact />;
+    }
+    return <Resume />;
+  };
 
-  // const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div className="wrapper">
       <Background />
-      <NavTabs />
-      <Home />
-      <Technologies />
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
       <Footer />
     </div>
   );

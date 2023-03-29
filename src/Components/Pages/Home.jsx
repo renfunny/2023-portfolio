@@ -1,16 +1,23 @@
 import React from "react";
 import GreetingImg from "../../Images/Palz-Standing.png";
+import Tooltip from "react-bootstrap/Tooltip";
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 
 export default function Home() {
   return (
     <section>
       <div className="intro-container">
         <div className="intro-img">
-          <img
-            src={GreetingImg}
-            className="greeting-img slide-in-left"
-            alt="Renato's avatar greeting"
-          />
+          <OverlayTrigger
+            placement="top"
+            overlay={<Tooltip>Welcome to my Portfolio!</Tooltip>}
+          >
+            <img
+              src={GreetingImg}
+              className="greeting-img slide-in-left"
+              alt="Renato's avatar greeting"
+            />
+          </OverlayTrigger>
         </div>
         <div className="intro-text slide-in-right">
           <h1>Hello World!</h1>
