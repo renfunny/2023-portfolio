@@ -16,9 +16,6 @@ function NavTabs({ currentPage, handlePageChange }) {
               <Nav.Link href="#home" onClick={() => handlePageChange("Home")}>
                 Home
               </Nav.Link>
-              <Nav.Link href="#about" onClick={() => handlePageChange("About")}>
-                About Me
-              </Nav.Link>
               <Nav.Link
                 href="#projects"
                 onClick={() => handlePageChange("Projects")}
@@ -32,8 +29,8 @@ function NavTabs({ currentPage, handlePageChange }) {
                 Contact Me
               </Nav.Link>
               <Nav.Link
-                href="#resume"
-                onClick={() => handlePageChange("Resume")}
+                href="https://docs.google.com/document/d/10bxzqPD-L65BA9RFk4bXjOz0d2Gdjd_t/edit?usp=sharing&ouid=106751600692304358518&rtpof=true&sd=true"
+                target="_blank"
               >
                 Resume
               </Nav.Link>
