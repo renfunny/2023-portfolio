@@ -13,6 +13,7 @@ function Footer() {
             target="_blank"
             className="footer-icon linkedin link"
             title="LinkedIn"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={brands("linkedin")} />
             <span className="sr-only">LinkedIn</span>
@@ -24,6 +25,7 @@ function Footer() {
             target="_blank"
             className="footer-icon github link"
             title="GitHub"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={brands("github")} />
             <span className="sr-only">GitHub</span>

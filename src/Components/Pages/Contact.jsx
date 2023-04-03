@@ -55,6 +55,7 @@ export default function Contact() {
                 target="_blank"
                 className="footer-icon linkedin link"
                 title="LinkedIn"
+                rel="noreferrer"
               >
                 <FontAwesomeIcon icon={brands("linkedin")} />
                 <span className="sr-only">LinkedIn</span>
