@@ -1,12 +1,13 @@
 import { useState, useRef } from "react";
-import axios from "axios";
 import ContactImg from "../../Images/Palz-Contact.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const containerRef = useRef(null);
   const [isSignUp, setIsSignUp] = useState(false);
+  const form = useRef();
 
   const handleSignUpClick = () => {
     setIsSignUp(true);
@@ -18,6 +19,27 @@ export default function Contact() {
     containerRef.current.classList.remove("right-panel-active");
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_utnt3qp",
+        "template_5471cjj",
+        form.current,
+        "xO6023TxciPqDRE84"
+      )
+      .then(
+        () => {
+          alert("Email successfully sent!");
+          window.location.reload(false);
+        },
+        () => {
+          alert("Failed to send Email, please try again");
+        }
+      );
+  };
+
   return (
     <div className="outer-contact-wrapper">
       <div
@@ -25,7 +47,7 @@ export default function Contact() {
         ref={containerRef}
       >
         <div className="form-container sign-up-container">
-          <form action="#" className="contact-form">
+          <form onSubmit={sendEmail} className="contact-form" ref={form}>
             <h1>Contact me!</h1>
             <div className="social-container">
               <a
@@ -39,14 +61,28 @@ export default function Contact() {
               </a>
             </div>
 
-            <input type="text" placeholder="Name" className="contact-input" />
-            <input type="email" placeholder="Email" className="contact-input" />
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              className="contact-input"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              className="contact-input"
+              required
+            />
             <textarea
               id="message"
+              name="message"
               placeholder="Message"
               className="contact-input"
+              required
             />
-            <button>Send</button>
+            <button type="submit">Send</button>
           </form>
         </div>
         <div className="form-container sign-in-container">

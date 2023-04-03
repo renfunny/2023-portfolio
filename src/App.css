@@ -196,6 +196,24 @@ footer h2 {
   color: rgb(192, 28, 156);
 }
 
+.slide-in-top {
+  opacity: 0;
+  transform: translateY(+100%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  animation: slide-in-top 1s ease-out forwards;
+}
+
+@keyframes slide-in-top {
+  from {
+    opacity: 0;
+    transform: translateY(+100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 /* Background */
 .area {
   background: #fff;
