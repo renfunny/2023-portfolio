@@ -19,8 +19,20 @@ export default function Projects() {
               allowing them to easily keep track of what they've watched or want
               to watch.
             </p>
-            <button>Live Site</button>
-            <button>Source Code</button>
+            <div className="btn-container">
+              <form
+                action="https://anime-bootcamp.herokuapp.com/"
+                target="_blank"
+              >
+                <button type="submit">Live Site</button>
+              </form>
+              <form
+                action="https://github.com/renfunny/anime-bootcamp"
+                target="_blank"
+              >
+                <button type="submit">Source Code</button>
+              </form>
+            </div>
           </div>
         </div>
         <div className="project">

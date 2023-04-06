@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<PortfolioContainer />} />
+        <Route path="/2023-portfolio" element={<PortfolioContainer />} />
       </Routes>
     </>
   );
