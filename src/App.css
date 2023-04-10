@@ -3,18 +3,34 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --primary-color: #ffff;
+  --secondary-color: #d7d9e7;
+  --tertiary-color: #737a83;
+  --highlight-color: #fffe04;
+  --text-color: black;
+  --title-font: "Rubik", sans-serif;
+  --title-size: 1.3rem;
+}
+
 /* Navbar */
 .App {
   text-align: center;
 }
 
-nav {
-  margin-top: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 20px;
-  background: rgba(56, 218, 210, 0.377);
+.nav-bg {
+  background-color: var(--tertiary-color);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(15px);
+  width: 100%;
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+}
+.nav-link:hover {
+  scale: 0.9;
+  transition: 0.3s ease-in-out;
+  text-decoration: underline;
 }
 
 body {
