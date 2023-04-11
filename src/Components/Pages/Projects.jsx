@@ -8,7 +8,7 @@ export default function Projects() {
       <div className="project-row">
         <div className="project">
           <img src={AnimeBootcamp} alt="" />
-          <div>
+          <div className="project-content">
             <h3>Anime Bootcamp</h3>
             <p>
               Our website provides a comprehensive selection of anime and manga
@@ -34,32 +34,50 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <img src="" alt="" />
-          <div>
-            <h2>Title</h2>
-            <p>Body</p>
-            <button>Live Site</button>
-            <button>Source Code</button>
+          <img src={AnimeBootcamp} alt="" />
+          <div className="project-content">
+            <h3></h3>
+            <p></p>
+            <div className="btn-container">
+              <form action="" target="_blank">
+                <button type="submit">Live Site</button>
+              </form>
+              <form action="" target="_blank">
+                <button type="submit">Source Code</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
       <div className="project-row">
         <div className="project">
-          <img src="" alt="" />
-          <div>
-            <h2>Title</h2>
-            <p>Body</p>
-            <button>Live Site</button>
-            <button>Source Code</button>
+          <img src={AnimeBootcamp} alt="" />
+          <div className="project-content">
+            <h3></h3>
+            <p></p>
+            <div className="btn-container">
+              <form action="" target="_blank">
+                <button type="submit">Live Site</button>
+              </form>
+              <form action="" target="_blank">
+                <button type="submit">Source Code</button>
+              </form>
+            </div>
           </div>
         </div>
         <div className="project">
-          <img src="" alt="" />
-          <div>
-            <h2>Title</h2>
-            <p>Body</p>
-            <button>Live Site</button>
-            <button>Source Code</button>
+          <img src={AnimeBootcamp} alt="" />
+          <div className="project-content">
+            <h3></h3>
+            <p></p>
+            <div className="btn-container">
+              <form action="" target="_blank">
+                <button type="submit">Live Site</button>
+              </form>
+              <form action="" target="_blank">
+                <button type="submit">Source Code</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

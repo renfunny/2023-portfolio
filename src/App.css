@@ -93,7 +93,13 @@ body {
   font-family: var(--text-font);
   background-color: var(--highlight-color);
 }
-
+@media (width <= 822px) {
+  .intro-text {
+    grid-template-columns: 5rem auto 5rem;
+    grid-template-rows: 25% 25% auto;
+    margin-bottom: 2rem;
+  }
+}
 /* Skills */
 #skills {
   height: 100vh;
@@ -187,13 +193,22 @@ body {
   #skills {
     flex-direction: column;
     padding: 0 1rem;
+    justify-content: flex-start;
+    gap: 10%;
+    margin-top: 20%;
+  }
+  .skills-title {
+    font-size: 4rem;
   }
   .swiper {
     width: 100%;
     aspect-ratio: 1;
   }
   .tech-class h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  .tech-class {
+    margin: 0;
   }
   .tech-icons {
     font-size: 4rem;
@@ -338,6 +353,8 @@ body {
 .projects-container h1 {
   text-align: center;
   margin-top: 3.5rem;
+  font-family: var(--text-font);
+  font-size: var(--title-size);
 }
 .project-row {
   display: flex;
@@ -369,13 +386,16 @@ body {
   border-radius: inherit;
   box-shadow: 0 60px 20px rgb(0 0 0 / 8%);
 }
-.project h3 {
+.project-content h3 {
   color: rgb(0 0 0 / 90%);
+  font-family: var(--text-font);
 }
-.project p {
+.project-content p {
   color: rgb(0 0 0 / 70%);
+  font-family: var(--text-font);
 }
 .project button {
+  font-family: var(--text-font);
   border: 0;
   background: var(--secondary-color);
   color: black;
@@ -405,6 +425,9 @@ body {
 }
 
 @media (width <= 991px) {
+  #projects h1 {
+    font-size: 4rem;
+  }
   .project-row {
     flex-direction: column;
     gap: 0;
@@ -430,13 +453,15 @@ body {
   object-fit: contain;
   transition: 0.5s ease-in-out;
 }
-h1 {
+.contact-form h1 {
   font-weight: bold;
   margin: 0;
+  font-family: var(--text-font);
 }
 
-h2 {
+.overlay-panel h1 {
   text-align: center;
+  font-family: var(--text-font);
 }
 
 p {
@@ -445,6 +470,7 @@ p {
   line-height: 20px;
   letter-spacing: 0.5px;
   margin: 20px 0 30px;
+  font-family: var(--text-font);
 }
 
 span {
@@ -492,6 +518,7 @@ button.ghost {
   padding: 0 50px;
   height: 100%;
   text-align: center;
+  font-family: var(--text-font);
 }
 
 .contact-input {
@@ -648,6 +675,12 @@ button.ghost {
   margin: 0 5px;
   height: 40px;
   width: 40px;
+  color: black;
+}
+
+.social-container a:hover {
+  background-color: var(--highlight-color);
+  color: #000000;
 }
 
 /* Footer */
@@ -659,12 +692,17 @@ footer {
   /* bottom: 0; */
   width: 100%;
   height: fit-content;
-  margin: 5rem 0 0 0;
+  padding: 3rem 0 0 0;
+  font-family: var(--text-font);
+  color: var(--primary-color);
+  background-color: #000000;
 }
 footer h2 {
   font-size: 1.4rem;
   color: black;
   margin-bottom: 2rem;
+  color: var(--primary-color);
+  background-color: #000000;
 }
 .icons-list {
   display: flex;
@@ -677,11 +715,12 @@ footer h2 {
   font-size: 1.5rem;
 }
 .linkedin {
-  color: rgb(50, 190, 183);
+  color: var(--primary-color);
 }
 .github {
-  color: rgb(50, 190, 183);
+  color: var(--primary-color);
 }
-.github:hover {
-  color: black;
+.github:hover,
+.linkedin:hover {
+  color: var(--highlight-color);
 }
