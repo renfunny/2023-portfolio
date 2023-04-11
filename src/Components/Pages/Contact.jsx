@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import ContactImg from "../../Images/Palz-Contact.png";
+import ContactImg from "../../Images/avatar2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 import emailjs from "@emailjs/browser";
@@ -41,7 +41,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="outer-contact-wrapper">
+    <div id="contact" className="outer-contact-wrapper">
       <div
         className={`contact-container ${isSignUp ? "right-panel-active" : ""}`}
         ref={containerRef}

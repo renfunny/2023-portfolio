@@ -17,7 +17,7 @@ import { SiJest, SiHeroku } from "react-icons/si";
 
 export default function Technologies() {
   return (
-    <div className="tech-container slide-in-top">
+    <div id="skills" className="tech-container slide-in-top">
       <h2 className="tech-title">Technologies</h2>
       <div className="tech-groups">
         <div className="tech-class">

@@ -1,12 +1,10 @@
 import React from "react";
-import ProjectImg from "../../Images/Palz-Projects.png";
 import AnimeBootcamp from "../../Images/anime-bootcamp.png";
 
 export default function Projects() {
   return (
-    <section className="projects-container">
+    <section id="projects" className="projects-container">
       <h1>Projects</h1>
-      <img src={ProjectImg} alt="" className="project-img" />
       <div className="project-row">
         <div className="project">
           <img src={AnimeBootcamp} alt="" />

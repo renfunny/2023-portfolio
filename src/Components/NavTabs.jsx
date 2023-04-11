@@ -2,9 +2,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
-function NavTabs({ currentPage, handlePageChange }) {
+function NavTabs() {
   return (
-    <Navbar expand="lg" className="nav-bg" variant="light">
+    <Navbar expand="lg" className="nav-bg" variant="light" fixed="top">
       <Container>
         <Nav className="me-auto">
           <Navbar.Brand href="#home">RC</Navbar.Brand>
@@ -12,25 +12,16 @@ function NavTabs({ currentPage, handlePageChange }) {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link
-              href="#home"
-              className="nav-link"
-              onClick={() => handlePageChange("Home")}
-            >
+            <Nav.Link href="#home" className="nav-link">
               Home
             </Nav.Link>
-            <Nav.Link
-              href="#projects"
-              className="nav-link"
-              onClick={() => handlePageChange("Projects")}
-            >
+            <Nav.Link href="#skills" className="nav-link">
+              Skills
+            </Nav.Link>
+            <Nav.Link href="#projects" className="nav-link">
               Projects
             </Nav.Link>
-            <Nav.Link
-              href="#contact"
-              className="nav-link"
-              onClick={() => handlePageChange("Contact")}
-            >
+            <Nav.Link href="#contact" className="nav-link">
               Contact Me
             </Nav.Link>
             <Nav.Link

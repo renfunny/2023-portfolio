@@ -6,31 +6,33 @@ import Contact from "./Pages/Contact";
 import Footer from "./Footer";
 import Projects from "./Pages/Projects";
 import Technologies from "./Technologies";
-
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState("Home");
+  // const [currentPage, setCurrentPage] = useState("Home");
 
-  const renderPage = () => {
-    if (currentPage === "Home") {
-      return (
-        <>
-          <Home /> <Technologies />
-        </>
-      );
-    }
-    if (currentPage === "Projects") {
-      return <Projects />;
-    }
-    return <Contact />;
-  };
+  // const renderPage = () => {
+  //   if (currentPage === "Home") {
+  //     return (
+  //       <>
+  //         <Home />
+  //       </>
+  //     );
+  //   }
+  //   if (currentPage === "Projects") {
+  //     return <Projects />;
+  //   }
+  //   return <Contact />;
+  // };
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  // const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div className="wrapper">
       <Background />
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {renderPage()}
+      <NavTabs />
+      <Home />
+      <Technologies />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   );
