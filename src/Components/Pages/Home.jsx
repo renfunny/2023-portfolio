@@ -119,12 +119,14 @@ export default function Home() {
               continously improve my skills, so I can further grow my career as
               a Developer and deliver top-quality results.{" "}
             </p>
-            <form
-              action="#skills"
+
+            <a
+              className="start-btn"
+              href="#skills"
               style={{ display: "flex", justifyContent: "center" }}
             >
-              <button>Let's Get Started!</button>
-            </form>
+              Lets Get Started!
+            </a>
           </div>
         </ParallaxLayer>
       </Parallax>
