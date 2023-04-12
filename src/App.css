@@ -202,7 +202,7 @@ body {
     padding: 0 1rem;
     justify-content: flex-start;
     gap: 10%;
-    margin-top: 20%;
+    padding-top: 20%;
   }
   .skills-title {
     font-size: 4rem;
@@ -429,6 +429,7 @@ body {
 @media (width <= 991px) {
   #projects {
     height: auto;
+    padding-top: 10%;
   }
   #projects h1 {
     font-size: 4rem;
