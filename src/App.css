@@ -340,12 +340,11 @@ body {
 }
 .projects-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
 }
-.projects-container h1 {
+#projects h1 {
   text-align: center;
   margin-top: 3.5rem;
   font-family: var(--text-font);
@@ -420,11 +419,17 @@ body {
 }
 
 @media (width <= 991px) {
+  #projects {
+    height: auto;
+  }
   #projects h1 {
     font-size: 4rem;
   }
   .project-row {
     flex-direction: column;
+  }
+
+  .project-row {
     gap: 0;
   }
   .projects-container h1 {
