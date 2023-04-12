@@ -26,20 +26,24 @@ export default function Home() {
         </ParallaxLayer>
         <ParallaxLayer className="intro-title" offset={1} speed={0.5}>
           <img
+            alt="cloud"
             src={Cloud}
             style={{ display: "block", width: "40%", marginLeft: "80%" }}
           />
           <img
+            alt="cloud"
             src={Cloud}
             style={{ display: "block", width: "30%", marginLeft: "15%" }}
           />
         </ParallaxLayer>
         <ParallaxLayer offset={0.95} speed={1.2} style={{ opacity: 0.9 }}>
           <img
+            alt="cloud"
             src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "90%" }}
           />
           <img
+            alt="cloud"
             src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "10%" }}
           />
@@ -47,10 +51,12 @@ export default function Home() {
 
         <ParallaxLayer offset={1.3} speed={0.6} style={{ opacity: 0.9 }}>
           <img
+            alt="cloud"
             src={Cloud}
             style={{ display: "block", width: "10%", marginLeft: "12%" }}
           />
           <img
+            alt="cloud"
             src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "85%" }}
           />
@@ -58,14 +64,17 @@ export default function Home() {
 
         <ParallaxLayer offset={0.9} speed={0.2} style={{ opacity: 0.9 }}>
           <img
+            alt="cloud"
             src={Cloud}
             style={{ display: "block", width: "20%", marginLeft: "80%" }}
           />
           <img
+            alt="cloud"
             src={Cloud}
             style={{ display: "block", width: "25%", marginLeft: "20%" }}
           />
           <img
+            alt="cloud"
             src={Cloud}
             style={{ display: "block", width: "10%", marginLeft: "8%" }}
           />
@@ -90,7 +99,11 @@ export default function Home() {
           speed={1.8}
           sticky={{ start: 1.2, end: 3 }}
         >
-          <img src={Cloud} style={{ width: "30%", marginTop: "48%" }} />
+          <img
+            alt="cloud"
+            src={Cloud}
+            style={{ width: "30%", marginTop: "48%" }}
+          />
         </ParallaxLayer>
         <ParallaxLayer
           offset={2}
