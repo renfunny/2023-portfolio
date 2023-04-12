@@ -1,10 +1,8 @@
 import React from "react";
 import GreetingImg from "../../Images/avatar.png";
 import Cloud from "../../Images/cloud.webp";
-import Earth from "../../Images/earth.jpg";
 import Earth2 from "../../Images/earth2.jpg";
-import Tooltip from "react-bootstrap/Tooltip";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 export default function Home() {

@@ -1,5 +1,8 @@
 import React from "react";
 import AnimeBootcamp from "../../Images/anime-bootcamp.png";
+import GitUp from "../../Images/GitUp-Screenshot.png";
+import PassGen from "../../Images/passwordGenerator-Screenshot.png";
+import NumGuess from "../../Images/Guess-my-number-screenshot.png";
 
 export default function Projects() {
   return (
@@ -34,15 +37,26 @@ export default function Projects() {
           </div>
         </div>
         <div className="project">
-          <img src={AnimeBootcamp} alt="" />
+          <img src={GitUp} alt="" />
           <div className="project-content">
-            <h3></h3>
-            <p></p>
+            <h3>GitUp.Now</h3>
+            <p>
+              Our user-friendly platform allows you to choose a specific muscle
+              or group of muscles you want to focus on, and we provide you with
+              a comprehensive list of exercises specifically designed to
+              strengthen and tone those muscles
+            </p>
             <div className="btn-container">
-              <form action="" target="_blank">
+              <form
+                action="https://renfunny.github.io/GitUp.Now/"
+                target="_blank"
+              >
                 <button type="submit">Live Site</button>
               </form>
-              <form action="" target="_blank">
+              <form
+                action="https://github.com/renfunny/GitUp.Now"
+                target="_blank"
+              >
                 <button type="submit">Source Code</button>
               </form>
             </div>
@@ -51,30 +65,50 @@ export default function Projects() {
       </div>
       <div className="project-row">
         <div className="project">
-          <img src={AnimeBootcamp} alt="" />
+          <img src={PassGen} alt="" />
           <div className="project-content">
-            <h3></h3>
-            <p></p>
+            <h3>Password Generator</h3>
+            <p>
+              Our platform allows you to customize your passwords based on your
+              specific requirements, such as length, inclusion of special
+              characters, numbers, and upper or lower case characters.{" "}
+            </p>
             <div className="btn-container">
-              <form action="" target="_blank">
+              <form
+                action="https://renfunny.github.io/password-generator/"
+                target="_blank"
+              >
                 <button type="submit">Live Site</button>
               </form>
-              <form action="" target="_blank">
+              <form
+                action="https://github.com/renfunny/password-generator"
+                target="_blank"
+              >
                 <button type="submit">Source Code</button>
               </form>
             </div>
           </div>
         </div>
         <div className="project">
-          <img src={AnimeBootcamp} alt="" />
+          <img src={NumGuess} alt="" />
           <div className="project-content">
-            <h3></h3>
-            <p></p>
+            <h3>Guess My Number</h3>
+            <p>
+              In this game, you are tasked with guessing a randomly generated
+              password within a limited number of attempts. The fewer guesses
+              you make, the higher your score will be.{" "}
+            </p>
             <div className="btn-container">
-              <form action="" target="_blank">
+              <form
+                action="https://renfunny.github.io/guess-my-number/"
+                target="_blank"
+              >
                 <button type="submit">Live Site</button>
               </form>
-              <form action="" target="_blank">
+              <form
+                action="https://github.com/renfunny/guess-my-number"
+                target="_blank"
+              >
                 <button type="submit">Source Code</button>
               </form>
             </div>
