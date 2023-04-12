@@ -23,7 +23,7 @@ This Portfolio was created using React to utilize all the benefits that come wit
 
 ## Installation
 
-There are no requirement or installations needed to view this portfolio as the site itself has been deployed on Github Pages, follow the following link to access the application: [https://renfunny.github.io/My-React-Portfolio/](https://renfunny.github.io/My-React-Portfolio/)
+There are no requirement or installations needed to view this portfolio as the site itself has been deployed on Github Pages, follow the following link to access the application: [https://renfunny.github.io/2023-portfolio/](https://renfunny.github.io/2023-portfolio/)
 
 ## Usage
 
