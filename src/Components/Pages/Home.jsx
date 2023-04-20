@@ -16,6 +16,18 @@ export default function Home() {
       }}
     >
       <Parallax pages={3}>
+        <ParallaxLayer>
+          <div className="mouse_scroll">
+            <div className="mouse">
+              <div className="wheel"></div>
+            </div>
+            <div>
+              <span className="m_scroll_arrows unu"></span>
+              <span className="m_scroll_arrows doi"></span>
+              <span className="m_scroll_arrows trei"></span>
+            </div>
+          </div>
+        </ParallaxLayer>
         <ParallaxLayer
           className="intro-title"
           offset={1}
