@@ -1,8 +1,8 @@
 import React from "react";
 import AnimeBootcamp from "../../Images/anime-bootcamp.png";
 import GitUp from "../../Images/GitUp-Screenshot.png";
-import PassGen from "../../Images/passwordGenerator-Screenshot.png";
-import NumGuess from "../../Images/Guess-my-number-screenshot.png";
+import JobSeeker from "../../Images/job-seeker.png";
+import AiSummarizer from "../../Images/ai-summarizer.png";
 
 export default function Projects() {
   return (
@@ -66,23 +66,18 @@ export default function Projects() {
         </div>
         <div className="project-row">
           <div className="project">
-            <img src={PassGen} alt="" />
+            <img src={JobSeeker} alt="" />
             <div className="project-content">
-              <h3>Password Generator</h3>
+              <h3>Job Seeker App</h3>
               <p>
-                Our platform allows you to customize your passwords based on
-                your specific requirements, such as length, inclusion of special
-                characters, numbers, and upper or lower case characters.{" "}
+                Discover and apply for diverse job opportunities worldwide with
+                our intuitive app. Explore various job types, industries, and
+                locations, seamlessly navigating to the job posting of your
+                choice to effortlessly apply and advance your career.
               </p>
               <div className="btn-container">
                 <form
-                  action="https://renfunny.github.io/password-generator/"
-                  target="_blank"
-                >
-                  <button type="submit">Live Site</button>
-                </form>
-                <form
-                  action="https://github.com/renfunny/password-generator"
+                  action="https://github.com/renfunny/job_seeker-react_native"
                   target="_blank"
                 >
                   <button type="submit">Source Code</button>
@@ -91,23 +86,25 @@ export default function Projects() {
             </div>
           </div>
           <div className="project">
-            <img src={NumGuess} alt="" />
+            <img src={AiSummarizer} alt="" />
             <div className="project-content">
-              <h3>Guess My Number</h3>
+              <h3>AI Summarizer</h3>
               <p>
-                In this game, you are tasked with guessing a randomly generated
-                password within a limited number of attempts. The fewer guesses
-                you make, the higher your score will be.{" "}
+                Experience the power of AI-driven summarization with our
+                cutting-edge app. Simply enter the URL of any article, and our
+                ChatGPT-powered technology will swiftly provide you with concise
+                and accurate summaries, saving you time and ensuring you stay
+                informed effortlessly.
               </p>
               <div className="btn-container">
                 <form
-                  action="https://renfunny.github.io/guess-my-number/"
+                  action="https://6451829618e2ca221cd9325c--capable-empanada-23d359.netlify.app/"
                   target="_blank"
                 >
                   <button type="submit">Live Site</button>
                 </form>
                 <form
-                  action="https://github.com/renfunny/guess-my-number"
+                  action="https://github.com/renfunny/AI-Summarizer"
                   target="_blank"
                 >
                   <button type="submit">Source Code</button>
