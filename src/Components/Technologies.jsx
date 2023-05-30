@@ -13,7 +13,14 @@ import {
   DiGit,
 } from "react-icons/di";
 import { GrGraphQl } from "react-icons/gr";
-import { SiJest, SiHeroku } from "react-icons/si";
+import {
+  SiJest,
+  SiHeroku,
+  SiFirebase,
+  SiNextdotjs,
+  SiPostman,
+  SiTailwindcss,
+} from "react-icons/si";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -59,6 +66,9 @@ export default function Technologies() {
               <li>
                 <DiBootstrap className="bootstrap" title="Bootstrap" />
               </li>
+              <li>
+                <SiTailwindcss className="tailwind" title="Tailwind" />
+              </li>
             </ul>
           </div>
         </SwiperSlide>
@@ -82,6 +92,9 @@ export default function Technologies() {
               </li>
               <li>
                 <GrGraphQl className="graphql" title="GraphQL" />
+              </li>{" "}
+              <li>
+                <SiFirebase className="firebase" title="Firebase" />
               </li>
             </ul>
           </div>
@@ -100,6 +113,12 @@ export default function Technologies() {
             <ul className="tech-icons">
               <li>
                 <SiHeroku className="heroku" title="Heroku" />
+              </li>
+              <li>
+                <SiPostman className="postman" title="Postman" />
+              </li>
+              <li>
+                <SiNextdotjs className="next-js" title="Next.js" />
               </li>
             </ul>
           </div>

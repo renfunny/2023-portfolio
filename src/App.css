@@ -374,7 +374,8 @@ body {
   font-size: 6rem;
 }
 .html,
-.git {
+.git,
+.postman {
   cursor: pointer;
   color: orangered;
 }
@@ -384,11 +385,13 @@ body {
   color: blue;
 }
 .javascript,
-.mysql {
+.mysql,
+.firebase {
   cursor: pointer;
   color: #fcbd11;
 }
-.react {
+.react,
+.tailwind {
   cursor: pointer;
   color: rgb(55, 212, 212);
 }
